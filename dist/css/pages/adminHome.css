@@ -1,0 +1,223 @@
+body {
+  background-color: #9e9d9d;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
+  padding: 0 43px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../../font/Inter/Inter-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../font/Inter/Inter-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../font/Inter/Inter-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../../font/Inter/Inter-Bold.ttf");
+  font-weight: 700;
+}
+body {
+  color: #353535;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+header .container {
+  background-color: #F8E7CA;
+  width: 100%;
+  height: 59px;
+  line-height: 59px;
+}
+header .container .header-right button {
+  gap: 21px;
+  border: none;
+  outline: none;
+  background-color: #F8E7CA;
+  width: 87px;
+  height: 33px;
+  display: inline-block;
+}
+header .container .header-right button svg {
+  padding: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -5px;
+}
+
+aside .container {
+  width: 100%;
+  padding-top: 54px;
+  padding-bottom: 30px;
+}
+aside .container .aside-left {
+  width: 244px;
+  height: 179px;
+  border-radius: 15px;
+  border: 1px solid #CECECE;
+}
+aside .container .aside-left table {
+  width: 242px;
+  height: 159px;
+  border-radius: 15px;
+}
+aside .container .aside-left table thead tr th {
+  height: 38px;
+  background-color: #F8E7CA;
+  border-radius: 15px 15px 0px 0px;
+  color: #353535;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-bottom: 1px solid #CECECE;
+}
+aside .container .aside-left table thead tr th strong {
+  padding-left: 13px;
+}
+aside .container .aside-left table tbody tr td {
+  border-bottom: 1px dotted #CECECE;
+  padding: 0;
+  height: 29px;
+}
+aside .container .aside-left table tbody tr td a {
+  padding-left: 13px;
+  text-decoration: none;
+  color: #353535;
+  color: #353535;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+}
+aside .container .aside-right-product {
+  margin-left: 17px;
+  width: 100%;
+  border: 1px solid #CECECE;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+aside .container .aside-right-product .aside-right-top {
+  width: 100%;
+  height: 44.23px;
+  border-radius: 15px 15px 0px 0px;
+  line-height: 44.23px;
+  background: #F8E7CA;
+  padding-left: 15px;
+}
+aside .container .aside-right-product .aside-right-mid .btn-addproduct {
+  margin-top: 6.77px;
+  color: #353535;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  width: 160px;
+  height: 39px;
+  line-height: 39px;
+  border-radius: 10px;
+  background: #FFE2B0;
+  border: none;
+  margin-right: 10px;
+}
+aside .container .aside-right-product .aside-right-mid .form-right {
+  margin-top: 20px;
+}
+aside .container .aside-right-product .aside-right-mid .form-right button {
+  margin-left: 15px;
+  margin-right: -10px;
+}
+aside .container .aside-right-product .aside-right-mid .modal .modal-body form table tbody tr td {
+  padding-right: 20px;
+  height: 40px;
+}
+aside .container .aside-right-product .aside-right-mid .modal .modal-body form table tbody tr td p {
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  vertical-align: middle;
+  display: inline;
+}
+aside .container .aside-right-product .aside-right-mid .modal .modal-body form table tbody tr td label {
+  height: 220px;
+  width: 198px;
+  box-shadow: 2px 2px 3px 1px #555;
+  border-radius: 5px;
+}
+aside .container .aside-right-product .aside-right-mid .modal .modal-body form table tbody tr td label, aside .container .aside-right-product .aside-right-mid .modal .modal-body form table tbody tr td input {
+  margin-top: 10px;
+}
+aside .container .aside-right-product .aside-right-end {
+  margin-top: 59.77px;
+  margin-bottom: 50px;
+}
+aside .container .aside-right-product .aside-right-end form {
+  display: block;
+  border-radius: 15px;
+  justify-content: center;
+  justify-self: center;
+  width: 98%;
+  margin-left: 1%;
+  border: 1px solid #CECECE;
+  border-radius: 15px;
+  background-color: #fff;
+  text-align: center;
+}
+aside .container .aside-right-product .aside-right-end form table {
+  vertical-align: middle;
+}
+aside .container .aside-right-product .aside-right-end form table img {
+  height: 220px;
+  width: 198px;
+}
+aside .container .aside-right-product .aside-right-end form table thead tr {
+  border-radius: 15px 15px 0px 0px;
+}
+aside .container .aside-right-product .aside-right-end form table thead tr th {
+  width: 909px;
+  height: 39.733px;
+  background: #F8E7CA;
+}
+aside .container .aside-right-product .aside-right-end form table tbody tr td {
+  border-bottom: 1px dotted #CECECE;
+}
+aside .container .aside-right-product .aside-right-end form table .th-a {
+  width: 50px;
+}
+aside .container .aside-right-product .aside-right-end form table a {
+  text-decoration: none;
+}
+aside .container .aside-right-product .aside-right-end form table .th-img {
+  width: 240px;
+  border-top-left-radius: 15px;
+}
+aside .container .aside-right-product .aside-right-end form table .th-a-r {
+  border-top-right-radius: 15px;
+}
+aside .container .aside-right-product .aside-right-end nav {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=adminHome.css.map */

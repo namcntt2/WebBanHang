@@ -1,0 +1,79 @@
+@import "../base/maxWidthContainer";
+@import "../base/tyography";
+@import "../layout/header";
+@import "../layout/footer";
+@import "../layout/madal";
+@import "../layout/offcanvas";
+
+aside{
+    .container{
+        padding-top: 24px;
+        h1{
+            text-align: center;
+            color: #FFAB6F;
+            font-family: Inter;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+        p{
+            text-align: center;
+            color: #414141;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        form{
+            table{
+                .table1{
+                    text-align: center;
+                    background-color: #FFAB6F;
+                    thead{
+                        tr{
+                            th{
+                                text-align: center;
+                                color: black;
+                            }
+                        }
+                    }
+                    tbody{
+                        background-color: #FFAB6F;
+                        tr{
+                            td{
+                                text-align: center;
+                                width: 54px;
+                                height: 18px;
+                                table{
+                                    tr{
+                                        td{
+                                            border: 1px solid #c3c3c3;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .table2{
+                    thead{
+                        tr{
+                            th{
+                                color: black;
+                            }
+                        }
+                    }
+                    tbody{
+                        tr{
+                            td{
+                                color:black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

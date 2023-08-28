@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="lib/WOW-master/css/libs/animate.css">    
+        <link rel="stylesheet" href="../dist/css/pages/yourCard.css">
+        <style>
+            html,body{
+                margin: 0;
+    
+                ::-webkit-scrollbar {
+                    width: 10px;
+                }
+    
+                ::-webkit-scrollbar-track {
+                    background: #fff;
+                }
+    
+                ::-webkit-scrollbar-thumb {
+                    background: #555;
+                    opacity: 50%;
+                    border-radius: 10px;
+                }
+    
+                ::-webkit-scrollbar-thumb:hover {
+                    background: #555;
+                }
+            }
+            .btn-product {
+                color: black;
+                border-radius: 4px;
+                border: 0.5px solid #000;
+                background: #FFF;
+                font-family: Inter;
+                padding: 0 16px;
+                font-size: 12px;
+                font-weight: 400;
+                height: 22px;
+                line-height: 22px;
+            }
+            .btn-addtocard {
+                border: 0.5px solid #000;
+                font-size: 14px;
+                padding-top: 3px;
+                border-radius: 15px;
+                background: #FFF;
+            }
+        </style>
+</head>
+<body>
+    <header class="container">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-2 header-left wow animate__backInDown">
+                    <svg width="29" height="18" viewBox="0 0 29 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2.84446 3.09091V14H1.19851V3.09091H2.84446ZM14.0465 3.09091V14H12.5337L6.98864 5.99929H6.88743V14H5.24148V3.09091H6.76491L12.3153 11.1023H12.4165V3.09091H14.0465ZM16.4475 14V3.09091H20.336C21.1847 3.09091 21.8879 3.24538 22.4454 3.55433C23.0029 3.86328 23.4202 4.28587 23.6972 4.82209C23.9742 5.35476 24.1127 5.9549 24.1127 6.62251C24.1127 7.29368 23.9724 7.89737 23.6919 8.43359C23.4149 8.96626 22.9958 9.38885 22.4347 9.70135C21.8772 10.0103 21.1759 10.1648 20.3307 10.1648H17.6567V8.76918H20.1816C20.7178 8.76918 21.1528 8.67685 21.4866 8.49219C21.8204 8.30398 22.0654 8.0483 22.2217 7.72514C22.3779 7.40199 22.4561 7.03445 22.4561 6.62251C22.4561 6.21058 22.3779 5.84482 22.2217 5.52521C22.0654 5.20561 21.8186 4.95526 21.4813 4.77415C21.1475 4.59304 20.7071 4.50249 20.1602 4.50249H18.0935V14H16.4475Z"
+                            fill="#FFAB6F" />
+                        <circle cx="26.5" cy="11.5" r="2.5" fill="#FFAB6F" />
+                        <circle cx="28" cy="5" r="1" fill="#FFAB6F" />
+                    </svg>
+                </div>
+                <div class="col-4 wow animate__backInDown">
+                    <div class="header-mid">
+                        <a href="#Home">Home</a>
+                        <a href="#AboutUs">About</a>
+                        <a href="#Product">Product</a>
+                        <a href="#Blog">Blog</a>
+                        <a href="#Contant">Contant</a>
+                    </div>
+                </div>
+                <div class="col-6 wow animate__backInDown">
+                    <div class="header-right float-end">
+                        <div href="" class="search-box">
+                            <button class="btn-search"><svg width="31" height="21" viewBox="0 0 31 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M19.3469 9.0306C19.3469 11.9667 16.9667 14.3469 14.0306 14.3469C11.0945 14.3469 8.71426 11.9667 8.71426 9.0306C8.71426 6.09448 11.0945 3.71429 14.0306 3.71429C16.9667 3.71429 19.3469 6.09448 19.3469 9.0306ZM18.2453 14.205C17.0962 15.1421 15.629 15.704 14.0306 15.704C10.3449 15.704 7.35712 12.7162 7.35712 9.0306C7.35712 5.34495 10.3449 2.35715 14.0306 2.35715C17.7162 2.35715 20.704 5.34495 20.704 9.0306C20.704 10.629 20.1421 12.0962 19.2049 13.2453L22.7902 16.8306C23.0552 17.0956 23.0552 17.5252 22.7902 17.7902C22.5252 18.0552 22.0955 18.0552 21.8305 17.7902L18.2453 14.205Z"
+                                    fill="black" />
+                            </svg></button>
+                            <input type="text" class="input-search" placeholder="How to search...">
+                        </div>
+                        <a href="" class="giohang" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" >
+                            <svg width="31" height="22" viewBox="0 0 31 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="2">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14.909 3.51167C13.7918 3.51167 13.0254 4.30974 13.0254 5.1313V5.77917H16.7925V5.1313C16.7925 4.30974 16.0261 3.51167 14.909 3.51167ZM11.5137 5.1313V5.77917H10.3824C8.78138 5.77917 7.45794 7.0273 7.36425 8.62557L7.00793 14.7037C6.85525 17.3082 8.9262 19.5041 11.5352 19.5041H18.5461C21.1551 19.5041 23.226 17.3082 23.0734 14.7037L22.717 8.62557C22.6233 7.0273 21.2999 5.77917 19.6989 5.77917H18.3042V5.1313C18.3042 3.32899 16.7072 2 14.909 2C13.1107 2 11.5137 3.32899 11.5137 5.1313ZM19.6989 7.29084H10.3824C9.58189 7.29084 8.92017 7.9149 8.87332 8.71404L8.51701 14.7921C8.41522 16.5285 9.79586 17.9924 11.5352 17.9924H18.5461C20.2854 17.9924 21.6661 16.5285 21.5643 14.7921L21.208 8.71404C21.1611 7.9149 20.4994 7.29084 19.6989 7.29084ZM12.4011 8.33449C12.8174 8.3345 13.1551 8.67111 13.1569 9.08703L13.1569 9.08725L13.1572 9.09867C13.1576 9.1109 13.1584 9.132 13.1603 9.16067C13.164 9.21826 13.1717 9.30492 13.1877 9.41066C13.2201 9.62594 13.2836 9.90026 13.4032 10.1645C13.5222 10.4276 13.6857 10.6569 13.9073 10.8202C14.1202 10.9771 14.4305 11.1059 14.9085 11.1059C15.4691 11.1059 15.8393 10.9679 16.0915 10.7998C16.3484 10.6285 16.5291 10.3948 16.6574 10.138C16.7873 9.87828 16.856 9.60941 16.8911 9.3991C16.9083 9.29573 16.9166 9.21125 16.9206 9.15556C16.9226 9.12785 16.9234 9.10766 16.9238 9.09627L16.9241 9.08619C16.9263 8.67066 17.2639 8.33449 17.6799 8.33449C18.0973 8.33449 18.4357 8.67289 18.4357 9.09033H17.6799C18.4357 9.09033 18.4357 9.09071 18.4357 9.0911L18.4357 9.09194L18.4357 9.09381L18.4357 9.09834L18.4356 9.11047C18.4354 9.1199 18.4351 9.13202 18.4346 9.14663C18.4337 9.17584 18.4318 9.2152 18.4284 9.26326C18.4216 9.35914 18.4082 9.49116 18.3822 9.64761C18.3306 9.95693 18.2261 10.3809 18.0095 10.814C17.7915 11.2501 17.4525 11.7092 16.93 12.0576C16.4027 12.4091 15.7336 12.6175 14.9085 12.6175C14.1329 12.6175 13.5028 12.3999 13.0106 12.0372C12.5269 11.6808 12.2203 11.2173 12.0259 10.7875C11.832 10.3589 11.7388 9.9404 11.6929 9.63605C11.6697 9.48197 11.6578 9.35212 11.6517 9.25815C11.6487 9.21104 11.6471 9.1726 11.6462 9.14423C11.6458 9.13004 11.6456 9.11834 11.6454 9.1093L11.6453 9.09776L11.6453 9.09352L11.6453 9.09179L11.6453 9.09103C11.6453 9.09067 11.6453 9.09033 12.4011 9.09033L11.6453 9.09033C11.6453 8.67289 11.9837 8.33449 12.4011 8.33449Z"
+                                        fill="#303030" />
+                                </svg>
+                        </a>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h1 class="offcanvas-title" id="offcanvasRightLabel">Giỏ hàng <i class="fa-solid fa-basket-shopping"></i></h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                        <div class="offcanvas-body">
+                            <div class="sanphamdachon">
+                                <div class="sanphamdachon-item">
+                                    <form action="">
+                                        <input class="form-check-input" type="checkbox">
+                                    </form>
+                                    <div class="item-all">
+                                        <img src="../img/product/Rectangle 18 (1).png" alt="">
+                                        <div class="boxgh">
+                                            <h5><strong class="doimautt">Fern plug jar silver</strong></h5> 
+                                        <h5>Giá tiền: <span>50.000</span>đ</h5>
+                                        <h5>
+                                            <ul>
+                                                <p>Số lượng:</p>
+                                                <li><i class="fa-solid fa-minus"></i></li>
+                                                <li>1</li>
+                                                <li><i class="fa-solid fa-plus"></i></li>
+                                            </ul>
+                                        </h5>
+                                        </div>
+                                        <button><i class="fa-solid fa-circle-xmark"></i></button>
+                                    </div>
+                                </div>
+                                <div class="sanphamdachon-item">
+                                    <form action="">
+                                        <input class="form-check-input" type="checkbox">
+                                    </form>
+                                    <div class="item-all">
+                                        <img src="../img/product/Rectangle 18 (1).png" alt="">
+                                        <div class="boxgh">
+                                            <h5><strong class="doimautt">Fern plug jar silver</strong></h5> 
+                                        <h5>Giá tiền: <span>50.000</span>đ</h5>
+                                        <h5>
+                                            <ul>
+                                                <p>Số lượng:</p>
+                                                <li><i class="fa-solid fa-minus"></i></li>
+                                                <li>1</li>
+                                                <li><i class="fa-solid fa-plus"></i></li>
+                                            </ul>
+                                        </h5>
+                                        </div>
+                                        <button><i class="fa-solid fa-circle-xmark"></i></button>
+                                    </div>
+                                </div>
+                                <div class="sanphamdachon-item">
+                                    <form action="">
+                                        <input class="form-check-input" type="checkbox">
+                                    </form>
+                                    <div class="item-all">
+                                        <img src="../img/product/Rectangle 18 (1).png" alt="">
+                                        <div class="boxgh">
+                                            <h5><strong class="doimautt">Fern plug jar silver</strong></h5> 
+                                        <h5>Giá tiền: <span>50.000</span>đ</h5>
+                                        <h5>
+                                            <ul>
+                                                <p>Số lượng:</p>
+                                                <li><i class="fa-solid fa-minus"></i></li>
+                                                <li>1</li>
+                                                <li><i class="fa-solid fa-plus"></i></li>
+                                            </ul>
+                                        </h5>
+                                        </div>
+                                        <button><i class="fa-solid fa-circle-xmark"></i></button>
+                                    </div>
+                                </div>
+                                <div class="sanphamdachon-item">
+                                    <form action="">
+                                        <input class="form-check-input" type="checkbox">
+                                    </form>
+                                    <div class="item-all">
+                                        <img src="../img/product/Rectangle 18 (1).png" alt="">
+                                        <div class="boxgh">
+                                            <h5><strong class="doimautt">Fern plug jar silver</strong></h5> 
+                                        <h5>Giá tiền: <span>50.000</span>đ</h5>
+                                        <h5>
+                                            <ul>
+                                                <p>Số lượng:</p>
+                                                <li><i class="fa-solid fa-minus"></i></li>
+                                                <li>1</li>
+                                                <li><i class="fa-solid fa-plus"></i></li>
+                                            </ul>
+                                        </h5>
+                                        </div>
+                                        <button><i class="fa-solid fa-circle-xmark"></i></button>
+                                    </div>
+                                </div>
+                                <div class="sanphamdachon-item">
+                                    <form action="">
+                                        <input class="form-check-input" type="checkbox">
+                                    </form>
+                                    <div class="item-all">
+                                        <img src="../img/product/Rectangle 18 (1).png" alt="">
+                                        <div class="boxgh">
+                                            <h5><strong class="doimautt">Fern plug jar silver</strong></h5> 
+                                        <h5>Giá tiền: <span>50.000</span>đ</h5>
+                                        <h5>
+                                            <ul>
+                                                <p>Số lượng:</p>
+                                                <li><i class="fa-solid fa-minus"></i></li>
+                                                <li>1</li>
+                                                <li><i class="fa-solid fa-plus"></i></li>
+                                            </ul>
+                                        </h5>
+                                        </div>
+                                        <button><i class="fa-solid fa-circle-xmark"></i></button>
+                                    </div>
+                                </div>
+                                <div class="sanphamdachon-item">
+                                    <form action="">
+                                        <input class="form-check-input" type="checkbox">
+                                    </form>
+                                    <div class="item-all">
+                                        <img src="../img/product/Rectangle 18 (1).png" alt="">
+                                        <div class="boxgh">
+                                            <h5><strong class="doimautt">Fern plug jar silver</strong></h5> 
+                                        <h5>Giá tiền: <span>50.000</span>đ</h5>
+                                        <h5>
+                                            <ul>
+                                                <p>Số lượng:</p>
+                                                <li><i class="fa-solid fa-minus"></i></li>
+                                                <li>1</li>
+                                                <li><i class="fa-solid fa-plus"></i></li>
+                                            </ul>
+                                        </h5>
+                                        </div>
+                                        <button><i class="fa-solid fa-circle-xmark"></i></button>
+                                    </div>
+                                </div>
+                                <div class="sanphamdachon-item">
+                                    <form action="">
+                                        <input class="form-check-input" type="checkbox">
+                                    </form>
+                                    <div class="item-all">
+                                        <img src="../img/product/Rectangle 18 (1).png" alt="">
+                                        <div class="boxgh">
+                                            <h5><strong class="doimautt">Fern plug jar silver</strong></h5> 
+                                        <h5>Giá tiền: <span>50.000</span>đ</h5>
+                                        <h5>
+                                            <ul>
+                                                <p>Số lượng:</p>
+                                                <li><i class="fa-solid fa-minus"></i></li>
+                                                <li>1</li>
+                                                <li><i class="fa-solid fa-plus"></i></li>
+                                            </ul>
+                                        </h5>
+                                        </div>
+                                        <button><i class="fa-solid fa-circle-xmark"></i></button>
+                                    </div>
+                                </div>
+                                <div class="sanphamdachon-item">
+                                    <form action="">
+                                        <input class="form-check-input" type="checkbox">
+                                    </form>
+                                    <div class="item-all">
+                                        <img src="../img/product/Rectangle 18 (1).png" alt="">
+                                        <div class="boxgh">
+                                            <h5><strong class="doimautt">Fern plug jar silver</strong></h5> 
+                                        <h5>Giá tiền: <span>50.000</span>đ</h5>
+                                        <h5>
+                                            <ul>
+                                                <p>Số lượng:</p>
+                                                <li><i class="fa-solid fa-minus"></i></li>
+                                                <li>1</li>
+                                                <li><i class="fa-solid fa-plus"></i></li>
+                                            </ul>
+                                        </h5>
+                                        </div>
+                                        <button><i class="fa-solid fa-circle-xmark"></i></button>
+                                    </div>
+                                </div>
+                                <div class="sanphamdachon-item">
+                                    <form action="">
+                                        <input class="form-check-input" type="checkbox">
+                                    </form>
+                                    <div class="item-all">
+                                        <img src="../img/product/Rectangle 18 (1).png" alt="">
+                                        <div class="boxgh">
+                                            <h5><strong class="doimautt">Fern plug jar silver</strong></h5> 
+                                        <h5>Giá tiền: <span>50.000</span>đ</h5>
+                                        <h5>
+                                            <ul>
+                                                <p>Số lượng:</p>
+                                                <li><i class="fa-solid fa-minus"></i></li>
+                                                <li>1</li>
+                                                <li><i class="fa-solid fa-plus"></i></li>
+                                            </ul>
+                                        </h5>
+                                        </div>
+                                        <button><i class="fa-solid fa-circle-xmark"></i></button>
+                                    </div>
+                                </div>
+                                <div class="sanphamdachon-item">
+                                    <form action="">
+                                        <input class="form-check-input" type="checkbox">
+                                    </form>
+                                    <div class="item-all">
+                                        <img src="../img/product/Rectangle 18 (1).png" alt="">
+                                        <div class="boxgh">
+                                            <h5><strong class="doimautt">Fern plug jar silver</strong></h5> 
+                                        <h5>Giá tiền: <span>50.000</span>đ</h5>
+                                        <h5>
+                                            <ul>
+                                                <p>Số lượng:</p>
+                                                <li><i class="fa-solid fa-minus"></i></li>
+                                                <li>1</li>
+                                                <li><i class="fa-solid fa-plus"></i></li>
+                                            </ul>
+                                        </h5>
+                                        </div>
+                                        <button><i class="fa-solid fa-circle-xmark"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="offcanvas-footer">
+                            <p><b>Tổng tiền</b> <span>$ 600.000đ</span></p>
+                            <a href="">Thanh toán</a>
+                          </div>
+                        </div>
+                          <div class="dropdown d-flex">
+                            <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                    <path d="M1.36652 16.18C1.669 12.9267 4.40648 10.38 7.73877 10.38H9.73877C13.0711 10.38 15.8085 12.9267 16.111 16.18H1.36652Z" stroke="black" stroke-width="1.2"/>
+                                    <circle cx="9.01877" cy="4.5" r="3.68" stroke="black" stroke-width="1.2"/>
+                                  </svg>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <i class="fa-solid fa-right-to-bracket"></i> Login</a>
+                               
+                            </li>
+                              <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalcreateaccount">
+                                <i class="fa-solid fa-user-plus"></i> Create Account</a>
+                            </li>
+                            </ul>
+                          </div>
+                    </div>
+                    <!-- Madal create account -->
+                    <div class="modal fade" id="exampleModalcreateaccount" tabindex="-1" aria-labelledby="exampleModalLabelcreateaccount" aria-hidden="false">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h1>Create Account</h1>
+                                <p>Welcome to INP</p>
+                                <input type="text" class="form-control" placeholder="Full name" aria-label="Full name">
+                                <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+                                <input type="text" class="form-control" placeholder="Password" aria-label="Password">
+                                <input type="text" class="form-control" placeholder="Enter the password" aria-label="Enter the password">
+                                <input type="text" class="form-control" placeholder="Phone" aria-label="Phone">
+                                <span>You agree to the terms and conditions of INP</span>
+                                <a href="" id="createAccount">Create Account</a><br>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h1>Log in</h1>
+                                <p>Welcome to INP</p>
+                                <input type="text" class="form-control" placeholder="User name/Email" aria-label="User name/Email">
+                                <input type="text" class="form-control" placeholder="Password" aria-label="Password">
+                                <a href="" id="login">Log in</a><br>
+                                <a href="" id="crtacount" data-bs-toggle="modal" data-bs-target="#exampleModalcreateaccount">Create Account</a><br>
+                                <a href="">Forgot password</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <aside>
+        <div class="container">
+            <h1>Your cart</h1>
+            <p>The are products in the cart</p>
+            <form action="">
+                <table class="table">
+                    <div class="table1">
+                        <thead>
+                            <tr>
+                                <th><strong>Product’s name</strong></th>
+                                <th><strong>Price</strong></th>
+                                <th><strong>Quantity</strong></th>
+                                <th><strong>Into money</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="../img/product/Rectangle 18 (1).png" alt=""><label for="">Cloud flower beautiful</label></td>
+                                <td><label for="">$20.00</label></td>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td><i class="fa-solid fa-minus"></i></td>
+                                            <td><label for="">1</label></td>
+                                            <td><i class="fa-solid fa-plus"></i></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td><label for="">$20.00</label></td>
+                                <td><button><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                    <path d="M21.927 12.0275L12.0142 21.9136" stroke="#414141" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.0276 12.0142L21.9137 21.927" stroke="#414141" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg></button></td>
+                            </tr>
+                        </tbody>
+                    </div>
+                    <div class="table2">
+                        <thead>
+                            <tr>
+                                <th><h3>Oder note</h3></th>
+                                <th><h3>Billing information</h3></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="text" placeholder="Note"></td>
+                                <td>
+                                    <h4>Total money:</h4>
+                                    <button>Pay</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </div>
+                </table>
+            </form>
+        </div>
+    </aside>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+    integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+    <script src="../lib/jquery/code.jquery.com_jquery-3.7.0.min.js"></script>
+</body>
+</html>

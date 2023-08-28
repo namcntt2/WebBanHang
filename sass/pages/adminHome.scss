@@ -1,0 +1,231 @@
+@import "../base/maxWidthContainer";
+@import "../base/tyography";
+
+body{
+    color: #353535;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+header{
+    .container{
+        background-color: #F8E7CA;
+        width: 100%;
+        height: 59px;
+        line-height: 59px;
+        .header-right{
+            button{
+                gap:21px;
+                border: none;
+                outline: none;
+                background-color: #F8E7CA;
+                width: 87px;
+                height: 33px;
+                display: inline-block;
+                svg{
+                    padding: 2px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-top: -5px;
+                }
+            }
+        }
+    }
+}
+aside{
+    .container{
+        width: 100%;
+        padding-top: 54px;
+        padding-bottom: 30px;
+        .aside-left{
+            width: 244px;
+            height: 179px;
+            border-radius: 15px;
+            border: 1px solid #CECECE;
+            table{
+                width: 242px;
+                height: 159px;
+                border-radius: 15px;
+                thead{
+                    tr{
+                        th{
+                            height: 38px;
+                            background-color: #F8E7CA;
+                            border-radius: 15px 15px 0px 0px;
+                            color: #353535;
+                            font-family: Inter;
+                            font-size: 15px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                            border-bottom: 1px solid #CECECE;
+                            strong{
+                                padding-left: 13px;
+                            }
+                        }
+                    }
+                }
+                tbody{
+                    tr{
+                        td{
+                            border-bottom: 1px dotted #CECECE;
+                            padding: 0;
+                            height: 29px;
+                            a{
+                                padding-left: 13px;
+                                text-decoration: none;
+                                color: #353535;
+                                color: #353535;
+                                font-family: Inter;
+                                font-size: 13px;
+                                font-style: normal;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .aside-right{
+            // #product{
+            //     display: none;
+            // }
+            &-product{
+                margin-left: 17px;
+                width: 100%;
+                border: 1px solid #CECECE;
+                border-radius: 15px;
+                box-sizing: border-box;
+                .aside-right-top{
+                    width: 100%;
+                    height: 44.23px;
+                    border-radius: 15px 15px 0px 0px;
+                    line-height: 44.23px;
+                    background: #F8E7CA;
+                    padding-left: 15px;
+                }
+                .aside-right-mid{
+                    .btn-addproduct{
+                        margin-top: 6.77px;
+                        color: #353535;
+                        font-family: Inter;
+                        font-size: 13px;
+                        font-style: normal;
+                        font-weight: 600;
+                        width: 160px;
+                        height: 39px;
+                        line-height: 39px;
+                        border-radius: 10px;
+                        background: #FFE2B0;
+                        border: none;
+                        margin-right: 10px;
+                    }
+                    .form-right{
+                        margin-top: 20px;
+                        button{
+                            margin-left: 15px;
+                            margin-right: -10px;
+                        }
+                    }
+                    .modal{
+                        .modal-body{
+                            form{
+                                table{
+                                    tbody{
+                                        tr{
+                                            td{
+                                                p{
+                                                    color: #000;
+                                                    font-family: Inter;
+                                                    font-size: 16px;
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    line-height: normal;
+                                                    vertical-align: middle;
+                                                    display: inline;
+                                                }
+                                                padding-right: 20px;
+                                                height: 40px;
+                                                label{
+                                                    height: 220px;
+                                                    width: 198px;
+                                                    // border: 1px solid #555;
+                                                    box-shadow: 2px 2px 3px 1px #555;
+                                                    border-radius: 5px;
+                                                }
+                                                label,input{
+                                                    margin-top: 10px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .aside-right-end{
+                    margin-top: 59.77px;
+                    margin-bottom: 50px;
+                    form{
+                        display: block;
+                        border-radius: 15px;
+                        justify-content: center;
+                        justify-self: center;
+                        width: 98%;
+                        margin-left: 1%;
+                        border: 1px solid #CECECE;
+                        border-radius: 15px;
+                        background-color: #fff;
+                        text-align: center;
+                        table{
+                            vertical-align: middle;
+                            img{
+                                height: 220px;
+                                width: 198px;
+                            }
+                            thead{
+                                
+                                tr{
+                                    border-radius: 15px 15px 0px 0px;
+                                    th{
+                                        width: 909px;
+                                        height: 39.733px;
+                                        background: #F8E7CA;
+                                    }
+                                }
+                            }
+                            tbody{
+                                tr{
+                                    td{
+                                        border-bottom:1px dotted #CECECE ;
+                                    }
+                                }
+                            }
+                            .th-a{
+                                width: 50px;
+                            }
+                            a{
+                                text-decoration: none;
+                            }
+                            .th-img{
+                                width: 240px;
+                                border-top-left-radius:15px;
+                            }
+                            .th-a-r{
+                                border-top-right-radius:15px;
+                            }
+                        }
+                    }
+                    nav{
+                        margin-top: 10px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

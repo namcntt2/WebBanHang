@@ -1,0 +1,147 @@
+.offcanvas{
+    .offcanvas-header{
+        color: #FFAB6F;
+        h1{
+            font-size: 30px;
+        }
+        button{
+            font-size: 18px;
+        }
+    }
+    .offcanvas-body{
+        border: 1px solid #CECECE;
+        .sanphamdachon{
+            display: flex;
+            flex-direction: column;
+            .sanphamdachon-item{
+                display: flex;
+                height: 150px;
+                margin-bottom: 10px;
+                form{
+                    display: inline;
+                    line-height: 150px;
+                    .form-check-input{
+                        font-size: 22px;
+                        margin-top: 64px;
+                        margin-right: 5px;
+                        &:checked{
+                            background-color: #FFAB6F;
+                            color: #FFAB6F;
+                            border: none;
+                            outline: none;
+                            line-height: 150px;
+                        }
+                    }
+                }
+                .item-all{
+                    justify-content: space-between;
+                    display: flex;
+                    width: 100%;
+                    max-width: 465px;
+                    height: 150px;
+                    padding: 5px;
+                    border: 1px solid #CECECE;
+                    border-radius: 10px;
+                    img{
+                        display: inline;
+                        height: 100%;
+                        width: 30%;
+                    }
+                    .boxgh{
+                        display: inline;
+                        line-height: 150px;
+                        width: 65%;
+                        h5{
+                            margin-top: 16px;
+                            align-items: center;
+                            font-size: 18px;
+                            padding-left: 20px;
+                            Strong{
+                                font-size: 22px;
+                            }
+                            ul{
+                                display: flex;
+                                padding-left: 0;
+                                height: 25px;
+                                margin-bottom: 0;
+                                p{
+                                    padding-right: 10px;
+                                }
+                                li{
+                                  display: inline;
+                                  list-style: none;
+                                  border: 1px solid #CECECE;
+                                  width: 25px;
+                                  text-align: center;
+                                  box-sizing: border-box;
+                                }
+                              }
+                        }
+                    }
+                    button{
+                        display: inline;
+                        font-size: 24px;
+                        &:hover{
+                            color: red;
+                        }
+                    }
+                    &:hover{
+                        box-shadow:4px 4px 1px 1px #FFAB6F;
+                        h5{
+                            strong{
+                                color: #FFAB6F;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .offcanvas-footer{
+        padding: 20px;
+        form{
+            display: inline;
+            font-size: 22px;
+            color: #FFAB6F; 
+            padding-bottom: 0;
+            input{
+                margin-top: 0px;
+                margin-bottom: 5px;
+                vertical-align: middle;
+                &:checked{
+                    background-color: #FFAB6F;
+                    color: #FFAB6F;
+                    border: none;
+                    outline: none;
+                    line-height: 150px;
+                }
+            }
+            button{
+                background-color: #FFAB6F;
+                margin-top: 10px;
+            }
+        }
+        p{
+            font-size: 20px;
+            color: #FFAB6F;
+            span{
+                color: #000;
+            }
+        }
+        a{
+            font-size: 20px;
+            width: 100%;
+            display: inline-block;
+            text-align: center;
+            height: 50px;
+            color: #000;
+            background-color: #FFAB6F;
+            line-height: 50px;
+        }
+        &:hover{
+            a{
+                background-color: #fa7617;
+            }
+        }
+    }
+}

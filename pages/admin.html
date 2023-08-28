@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Admin trang chủ</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="lib/WOW-master/css/libs/animate.css">    
+        <link rel="stylesheet" href="../dist/css/pages/adminHome.css">
+        <style>
+            html,body{
+                margin: 0;
+
+                ::-webkit-scrollbar {
+                    width: 10px;
+                }
+
+                ::-webkit-scrollbar-track {
+                    background: #fff;
+                }
+
+                ::-webkit-scrollbar-thumb {
+                    background: #555;
+                    opacity: 50%;
+                    border-radius: 10px;
+                }
+
+                ::-webkit-scrollbar-thumb:hover {
+                    background: #555;
+                }
+            }
+            .btn-secondary{
+                background-color: #F8E7CA;
+                color: #000;
+                border: 1px solid #555;
+                outline: none;
+                &:hover{
+                    border: 1px solid #555;
+                    background-color: #F8E7CA;
+                    color: #555;
+                    box-shadow: 2px 1px 1px 1px #555;
+                }
+            }
+            .btn-primary{
+                background-color: #fff;
+                color: #555;
+                border:1px solid #555;
+                &:hover{
+                    color: #555;
+                    background-color: #fff;
+                    box-shadow: 2px 1px 1px 1px #555;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container d-flex justify-content-between">
+                <div class="header-left">
+                    <strong>Hello <label for="">User</label></strong>
+                </div>
+                <div class="header-right">
+                    <form action="">
+                        <button>
+                            <strong><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8606 3.50434C11.5375 2.78517 12.6804 2.78517 13.3573 3.50434L21.0308 11.6574C21.3301 11.9754 21.4967 12.3956 21.4967 12.8323V20.54C21.4967 21.4868 20.7292 22.2543 19.7824 22.2543H15.5103C14.5635 22.2543 13.796 21.4868 13.796 20.54V16.3148L13.7959 16.3124C13.7957 16.3057 13.7951 16.2917 13.7935 16.2713C13.7904 16.2304 13.7837 16.1659 13.7695 16.0861C13.7404 15.9225 13.6838 15.7163 13.5788 15.5195C13.4762 15.3271 13.3327 15.1525 13.1255 15.0231C12.9212 14.8953 12.6059 14.7807 12.1089 14.7807C10.8865 14.7807 10.4794 15.2396 10.3111 15.5376C10.2084 15.7195 10.159 15.9095 10.1369 16.0602C10.1261 16.1338 10.1226 16.1928 10.1217 16.2293C10.1212 16.2468 10.1213 16.2586 10.1214 16.2636L10.1226 16.2819V20.54C10.1226 21.4868 9.35504 22.2543 8.40827 22.2543H4.28582C3.33904 22.2543 2.57153 21.4868 2.57153 20.54V12.9913C2.57153 12.5546 2.73818 12.1344 3.03748 11.8164L10.8606 3.50434ZM14.6532 16.3087H15.5103V20.54H19.7824V12.8323L12.1089 4.67925L4.28582 12.9913L4.28582 20.54L8.40827 20.54V16.3271C8.40798 16.319 8.40772 16.31 8.40751 16.2999C8.40687 16.2697 8.40672 16.2304 8.40799 16.1832C8.41052 16.0892 8.41874 15.9618 8.44069 15.8119C8.48411 15.5153 8.58437 15.109 8.81837 14.6946C9.32357 13.8 10.3382 13.0664 12.1089 13.0664C12.8841 13.0664 13.5229 13.2498 14.0341 13.5693C14.5425 13.8871 14.876 14.3089 15.0914 14.7128C15.3045 15.1122 15.4069 15.5023 15.4573 15.786C15.4829 15.9298 15.496 16.0516 15.5029 16.1411C15.5063 16.186 15.5081 16.2232 15.5091 16.2515C15.5097 16.2656 15.5099 16.2775 15.5101 16.2871L15.5103 16.2997L15.5103 16.3047L15.5103 16.3068V16.3078C15.5103 16.3078 15.5103 16.3087 14.6532 16.3087Z" fill="#353535"/>
+                                </svg> Home</strong>
+                        </button>
+                        <button>
+                            <strong><svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
+                                <path d="M14.8287 4.17603C15.9613 5.30895 16.7325 6.75226 17.0448 8.32346C17.3572 9.89466 17.1966 11.5232 16.5834 13.0031C15.9703 14.4831 14.9321 15.748 13.6001 16.6379C12.2681 17.5279 10.7021 18.0029 9.10014 18.0029C7.49819 18.0029 5.93222 17.5279 4.60022 16.6379C3.26822 15.748 2.23 14.4831 1.61684 13.0031C1.00368 11.5232 0.843121 9.89466 1.15545 8.32346C1.46778 6.75226 2.23898 5.30895 3.37154 4.17603" stroke="#353535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.1001 1L9.1001 9" stroke="#353535" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg> Log out</strong>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <aside>
+            <div class="container d-flex">
+                <div class="aside-left">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th><Strong>Admin Menu</Strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><a href="">Configuration</a></td></tr>
+                            <tr><td><a href="">News</a></td></tr>
+                            <tr><td><a href="" id="click-product" onclick="showProduct()">Product</a></td></tr>
+                            <tr><td><a href="">Order</a></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="aside-right">
+                    <div class="aside-right-product" id="product">
+                        <div class="aside-right-top">
+                            <p><strong>List of products</strong></p>
+                        </div>
+                        <div class="aside-right-mid">
+                            <button class="float-end btn-addproduct" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><strong>Add Product</strong></button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Add Product</h1>
+                                    <button type="button" data-bs-dismiss="modal" class="btn-close" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="" class="form-control">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><p>Imgae</p></td>
+                                                        <td><input type="file" class="form-control"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><p>Photo added</p></td>
+                                                        <td><label for="" type="Image"></label></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><p>Products name</p></td>
+                                                        <td><input type="text" class="form-control"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><p>Update day</p></td>
+                                                        <td><input type="datetime-local" class="form-control"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><p>Date created</p></td>
+                                                        <td><input type="datetime-local" class="form-control"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><p>Price</p></td>
+                                                        <td><input type="text" class="form-control"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="form-right float-end">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Add</button>
+                                                <button type="reset" class="btn btn-primary">Reset</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="aside-right-end">
+                            <form action="">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th class="th-img"><strong>Image</strong></th>
+                                            <th><strong>Products name</strong></th>
+                                            <th><strong>Update day</strong></th>
+                                            <th><strong>Date created</strong></th>
+                                            <th><strong>Price</strong></th>
+                                            <th class="th-a"><strong>Copy</strong></th>
+                                            <th class="th-a"><strong>Fix</strong></th>
+                                            <th class="th-a th-a-r"><strong>Delete</strong></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><img src="../img/product/Rectangle 18.png" alt=""></td>
+                                            <td><label for="">Cloud flower beautiful</label></td>
+                                            <td><label for="">20/06/2023  15:02</label></td>
+                                            <td><label for="">20/06/2023  15:02</label></td>
+                                            <td><label for="">$20.00</label></td>
+                                            <td><a href="">Copy</a></td>
+                                            <td><a href="">Fix</a></td>
+                                            <td><a href="">Delete</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="../img/product/Rectangle 18 (1).png" alt=""></td>
+                                            <td><label for="">Fern plug jar silver</label></td>
+                                            <td><label for="">20/06/2023  15:02</label></td>
+                                            <td><label for="">20/06/2023  15:02</label></td>
+                                            <td><label for="">$32.00</label></td>
+                                            <td><a href="">Copy</a></td>
+                                            <td><a href="">Fix</a></td>
+                                            <td><a href="">Delete</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="../img/product/Rectangle 18 (2).png" alt=""></td>
+                                            <td><label for="">Flower basket vintage</label></td>
+                                            <td><label for="">20/06/2023  15:02</label></td>
+                                            <td><label for="">20/06/2023  15:02</label></td>
+                                            <td><label for="">$26.00</label></td>
+                                            <td><a href="">Copy</a></td>
+                                            <td><a href="">Fix</a></td>
+                                            <td><a href="">Delete</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="../img/product/Rectangle 18 (3).png" alt=""></td>
+                                            <td><label for="">Statues and jars modern</label></td>
+                                            <td><label for="">20/06/2023  15:02</label></td>
+                                            <td><label for="">20/06/2023  15:02</label></td>
+                                            <td><label for="">$22.00</label></td>
+                                            <td><a href="">Copy</a></td>
+                                            <td><a href="">Fix</a></td>
+                                            <td><a href="">Delete</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="../img/product/Rectangle 18 (4).png" alt=""></td>
+                                            <td><label for="">Scented cup candle</label></td>
+                                            <td><label for="">20/06/2023  15:02</label></td>
+                                            <td><label for="">20/06/2023  15:02</label></td>
+                                            <td><label for="">$32.00</label></td>
+                                            <td><a href="">Copy</a></td>
+                                            <td><a href="">Fix</a></td>
+                                            <td><a href="">Delete</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="../img/product/Rectangle 18 (5).png" alt=""></td>
+                                            <td><label for="">Rectangular table lamp</label></td>
+                                            <td><label for="">20/06/2023  15:02</label></td>
+                                            <td><label for="">20/06/2023  15:02</label></td>
+                                            <td><label for="">$28.00</label></td>
+                                            <td><a href="">Copy</a></td>
+                                            <td><a href="">Fix</a></td>
+                                            <td><a href="">Delete</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="../img/product/Rectangle 18 (6).png" alt=""></td>
+                                            <td><label for="">Baby flower pot beautiful</label></td>
+                                            <td><label for="">20/06/2023  15:02</label></td>
+                                            <td><label for="">20/06/2023  15:02</label></td>
+                                            <td><label for="">$20.00</label></td>
+                                            <td><a href="">Copy</a></td>
+                                            <td><a href="">Fix</a></td>
+                                            <td><a href="">Delete</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="../img/product/Rectangle 18 (7).png" alt=""></td>
+                                            <td><label for="">Decodative jars</label></td>
+                                            <td><label for="">20/06/2023  15:02</label></td>
+                                            <td><label for="">20/06/2023  15:02</label></td>
+                                            <td><label for="">$26.00</label></td>
+                                            <td><a href="">Copy</a></td>
+                                            <td><a href="">Fix</a></td>
+                                            <td><a href="">Delete</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                            <nav aria-label="Page navigation example" class="float-end">
+                                <ul class="pagination">
+                                  <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                      <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                  </li>
+                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                      <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+        <script src="../lib/jquery/code.jquery.com_jquery-3.7.0.min.js"></script>
+        <script>
+            const myModal = document.getElementById('myModal')
+            const myInput = document.getElementById('myInput')
+
+            myModal.addEventListener('shown.bs.modal', () => {
+            myInput.focus()
+            })
+
+            $('#click-product').addEventListener('click', function(){
+                if($('#product').text() === 'show'){
+                    $('#product').css('display', 'block');
+                }else{
+                    $('#product').css('display', 'none');
+                }
+            })
+        </script>
+    </body>
+</html>
