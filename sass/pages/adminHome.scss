@@ -31,6 +31,23 @@ header{
                     margin-top: -5px;
                 }
             }
+            a{
+                gap:21px;
+                border: none;
+                outline: none;
+                background-color: #F8E7CA;
+                color: #000;
+                width: 87px;
+                height: 33px;
+                display: inline-block;
+                text-decoration: none;
+                svg{
+                    padding: 2px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-top: -5px;
+                }
+            }
         }
     }
 }

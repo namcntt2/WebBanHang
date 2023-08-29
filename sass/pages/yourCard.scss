@@ -28,28 +28,43 @@ aside{
         }
         form{
             table{
-                .table1{
-                    text-align: center;
-                    background-color: #FFAB6F;
-                    thead{
-                        tr{
-                            th{
-                                text-align: center;
-                                color: black;
-                            }
+                
+                border-bottom: 1px dotted #D9D9D9;
+                thead{
+                    tr{
+                        th{
+                            text-align: center;
+                            color: black;
                         }
                     }
-                    tbody{
-                        background-color: #FFAB6F;
-                        tr{
-                            td{
-                                text-align: center;
-                                width: 54px;
-                                height: 18px;
-                                table{
-                                    tr{
-                                        td{
-                                            border: 1px solid #c3c3c3;
+                }
+                tbody{
+                    border-top: 1px dotted #D9D9D9;
+                    tr{
+                        td{
+                            text-align: center;
+                            color: black;
+                            vertical-align: middle;
+                            img{
+                                width: 100px;
+                                height: 104px;
+                                border-radius: 8px;
+                                background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+                            }
+                            label{
+                                margin-top: 0;
+                            }
+                            button{
+                                background-color: #fff;
+                                border: none;
+                                outline: none;
+                                &:hover{
+                                    box-shadow: 2px 1px 1px 1px #D9D9D9;
+                                    border-radius: 5px;
+                                    color: red;
+                                    svg{
+                                        path{
+                                            stroke:red;
                                         }
                                     }
                                 }
@@ -57,23 +72,98 @@ aside{
                         }
                     }
                 }
-                .table2{
-                    thead{
-                        tr{
-                            th{
-                                color: black;
-                            }
-                        }
+            }
+            .table>:not(caption)>*>* {
+                border-bottom: none;
+            }
+            .aside-bottom{
+                display: flex;
+                margin-top: 50px;
+                padding-bottom: 50px;
+                &-left{
+                    display: inline;
+                    width: 50%;
+                    color: #414141;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    input{
+                        width: 539px;      
+                        border-radius: 5px;
+                        border: 1px solid #CECECE;
+                        outline: none;
                     }
-                    tbody{
-                        tr{
-                            td{
-                                color:black;
-                            }
-                        }
+                    input[type="text"]{
+                        padding-top: 8px;
+                        padding-left: 12px;
+                        padding-bottom: 52px;
+                        color: #ADADAD;
+                        font-family: Inter;
+                        font-size: 11px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }  
+                }
+                &-right{
+                    float: inline-end;
+                    color: #414141;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    width: 50%;
+                    h4{
+                        color: #414141;
+                        font-family: Inter;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        margin-top: 18px;
+                        margin-bottom: 18px;
+                    }
+                    button{
+                        width: 107px;
+                        height: 30px;
+                        border: none;
+                        border-radius: 30px;
+                        background: #F8E7CA;
+                        color: #414141;
+                        font-family: Inter;
+                        font-size: 13px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
                     }
                 }
             }
+        }
+    }
+    .sl-next-prev{
+        display: inline-block;
+        border: 1px solid #D9D9D9;
+        width: 56px;
+        height: 18px;  
+        box-sizing: content-box; 
+        text-align: center;
+        line-height: 18px;
+        label{
+            border-left: 1px solid #D9D9D9;
+            border-right: 1px solid #D9D9D9;
+            height: 18px; 
+            width: 20px;
+            margin: 0 -2px;
+        }
+        button{
+            height: 18px; 
+            border: none;
+            outline: none;
+            background-color: #fff;
+            padding: 0;
         }
     }
 }
